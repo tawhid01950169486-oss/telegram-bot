@@ -926,12 +926,10 @@ async def left_member(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
 def main():
-    if not TOKEN:
-        raise RuntimeError(
-            "BOT_TOKEN environment variable is missing."
-        )
+    if not TOKEN:os.getenv("8897051881:AAEKPUjXuoiFE4eUCfU4Fad0T1NljQw1h-U")
 
-    app = Application.builder().token(TOKEN).build()
+        raise RuntimeError
+    app = Application.builder().token:os.getenv("8897051881:AAEKPUjXuoiFE4eUCfU4Fad0T1NljQw1h-U").build()
 
     # Basic
     app.add_handler(CommandHandler("start", start))
